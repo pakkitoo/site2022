@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+      <link rel="stylesheet" href="estilo.css">
+      <link rel="icon" href="saleciano.icon.png" type="x-icon">
+        <!--METADADOS-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="descripton" content="Aulas HTML-5 e CSS-3">
+        <meta name="keywords" content="HTML,CSS, Java Script">
+        <meta name="author" content="anderson huayhua">
+        <link rel="stylesheet" href="css\estilo.css">
+        <title>AULAS HTML</title>
+    </head>
+    <body>
+        <header id="topo"><!--topo-->
+          <div id="acessibilidade">
+            <ul id="atalhos">
+              <li><a href="#conteudo" accesskey="1" title="ir para o conteudo">ir para o conteudo [1]</a></li>
+              <li><a href="#menu" accesskey="2" title="ir para o menu de navegacao">ir para o menu [2]</a> </li>
+              <li><a href="rodape" accesskey="3" title="ir para o rodape">ir para o rodape [3]</a></li>
+              <li id="pgacces"><a href="acessibilidade.html" title="ir para a pagina de acessibilidade">ACESSIBILIDADE</a></li>
+              <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
+              <li class="contraste"><a href="javascript:void(0);" id="semcontraste">SEM CONTRASTE</a></li>
+              <li class="fonte"><a href="javascript:void(0);" id="aumenta">A +</a></li>
+              <li class="fonte"><a href="javascript:void(0);" id="diminui">A -</a></li>
+            </ul>
+          <img class="imagem" src="logo.png" alt="logo obra social dom bosco horizontal azul, branco e vermelho">
+          <img id="assistencia" src="assistencia-e-desenvolvimento-social_centralizado.png" alt="logo assistencia social">
+          <nav><!--navegação-->
+            <!--menu responsivo-->
+			<label for="bt_menu"><img class="images" src="images.png" alt="menu"></label>
+			<input type="checkbox" id="bt_menu"><!--menu responsivo-->
+                <ul id="menu">
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="comentarios.html">comentarios</a></li>
+                    <li><a href="metadados.html">metadados</a></li>
+                    <li><a href="#">listas</a>
+                      <ul>
+                          <li><a href="lista_ordenada.html">lista ordenada</a></li>
+                          <li><a href="lista_não_ordenada.html">lista não ordenada</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="layout.html">layout</a></li>
+                    <li><a href="contato.html">fale conosco</a></li>
+                 </ul>
+          </nav>
+          <body> <!-- Inicio do corpo da página -->
+
+            ... <!-- Conteúdo da página -->
+          
+            <div vw class="enabled">
+              <div vw-access-button class="active"></div>
+              <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+              </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+              new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+          </body> <!-- Fim do corpo da página -->
+        </header>
+        <main id="conteudo">
+          <ul id="breadcrumb">
+            <li><a href="index.html">inicio</a></li>
+            <li>fale conosco</li>
+          </ul>
+            <h1 id="titulo">FALE CONOSCO</h1>
+            <form name="contato" id="contato" method="post">
+                <fieldset>
+                  <label for="nome">nome</label><br>
+                  <input type="text" name="nome" id="nome" placenholder="nomecompleto" required><br>
+                  <label for="data">data de nascimento</label><br>
+                  <input type="date" name="data" id="data" required><br>
+                  <label for="cpf">CPF</label><br>
+                  <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>
+                  <label for="telefone">telefone</label><br>
+                  <input type="tel" name="telefone" id="telefone" placeholder="(99)99999-9999"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>dados de endereço</legend>
+                    <label for="cep">CEP</label><br>
+                    <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
+                    <label for="rua">Rua/Av</label><br>
+                    <input type="text" name="rua" id="rua"><br>
+                    <label for="numero">número</label><br>
+                    <input type="number" name="numero" id="numero" required><br>
+                    <label for="complemento">complemento</label><br>
+                    <input type="text" name="complemento" id="complemento" placeholder="apto/bloco..."><br>
+                    <label for="bairro">bairro</label><br>
+                    <input type="text" name="bairro" id="bairro"><br>
+                    <label for="cidade">cidade</label><br>
+                    <input type="text" name="cidade" id="cidade"><br>
+                    <label for="estado">estado</label><br>
+                    <input type="text" name="estado" id="estado"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>dados de mensagen</legend>
+                    <label for="assunto">assunto</label>
+                    <select name="assunto" id="asssunto" required><option value="" selected disabled>selecione uma opção</option>
+                      <option value="reclamação">reclamação</option>
+                      <option value="sugestão">sugestão</option>
+                      <option value="elogio">elogio</option>
+                      <option value="outro">outro</option>
+                    </select><br>
+                    <textarea name="mensagem" id="mensagem" rows="10" cols="40" required></textarea>
+                </fieldset>
+                <input type="submit" name="enviar" id="enviar" value="enviar"> <input type="reset" name="limpar" id="limpar" value="limpar">
+            </form>
+        </main>
+        <footer id="rodape">
+            <p>desenvolvido por aderson huayhua<br>todos os direitos reservados &copy; 2022.</p>
+        </footer>
+  
+  </body>
+</html>

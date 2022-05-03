@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="saleciano.icon.png" type="x-icon">
+    <!--Metadados-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aulas HTML-5 e CSS-3">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="anderson">
+    <title>AULAS HTML</title>
+</head>
+<body>
+    <header><!--topo-->
+        <div id="acessibilidade">
+			<ul id="atalhos">
+				<li><a href="#conteudo" accesskey="1" title="ir para o conteudo">ir para o conteudo [1]</a></li>
+				<li><a href="#menu" accesskey="2" title="ir para o menu de navegacao">ir para o menu [2]</a> </li>
+				<li><a href="rodape" accesskey="3" title="ir para o rodape">ir para o rodape [3]</a></li>
+				<li id="pgacces"><a href="acessibilidade.html" title="ir para a pagina de acessibilidade">ACESSIBILIDADE</a></li>
+				<li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
+				<li class="contraste"><a href="javascript:void(0);" id="semcontraste">SEM CONTRASTE</a></li>
+				<li class="fonte"><a href="javascript:void(0);" id="aumenta">A +</a></li>
+				<li class="fonte"><a href="javascript:void(0);" id="diminui">A -</a></li>
+			</ul>
+         <img class="ïmagem" src="logo.png" alt="logo obra Social dom bosco horizontal azul, branco e vermelho">
+         <img id="assistencia" src="assistencia-e-desenvolvimento-social_centralizado.png" alt="logo assistencia social">
+         <nav><!--navegacao-->
+            <!--menu responsivo-->
+			<label for="bt_menu"><img class="images" src="images.png" alt="menu"></label>
+			<input type="checkbox" id="bt_menu"><!--menu responsivo-->
+            <ul id="menu">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="comentarios.html">comentarios</a></li>
+                <li><a href="metadados.html">metadados</a></li>
+                <li><a href="#">Listas</a>
+                  <ul>
+                      <li><a href="lista_ordenada.html">lista ordenada</a></li>
+                      <li><a href="lista_nao_ordenada.html">lista nao ordenada</a></li>
+                  </ul>
+                </li>
+                <li><a href="layout.html">layout</a></li>
+                <li><a href="contato.html">fale conosco</a></li>
+            </ul>
+        </nav>
+        <body> <!-- Inicio do corpo da página -->
+
+            ... <!-- Conteúdo da página -->
+          
+            <div vw class="enabled">
+              <div vw-access-button class="active"></div>
+              <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+              </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+              new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+          </body> <!-- Fim do corpo da página -->
+    </header>
+    <main id="conteudo">
+        <ul id="breadcrumb">
+			<li><a href="index.html">inicio</a></li>
+            <li><a href="javascript:void(0);">listas</a></li>
+			<li>lista nao ordenada</li>
+        </ul>    
+        <h1>LISTA NAO ORDENADA</h1>
+        <p>Uma lista não ordenada começa com
+            a tag &gt;ul&gt;. Cada item da lista começa
+            com a tag &gt;li&gt;.</p>
+        <p>Os itens da lista serão marcados com
+            marcadores (pequenos círculos pretos) por
+            padrão:</p>
+        <img src="ul.png" alt="a imagem com conteudo explicativo sobre o uso da lista nao ordenada em HTML">
+    </main>
+    <footer id="rodape">
+        <p>desenvolvido por anderson</p>
+        <p>todos os direitos reservados &copy; 2022.</p>
+    </footer>
+    
+</body>
+</html>
